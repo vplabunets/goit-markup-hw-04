@@ -158,6 +158,22 @@ img {
   padding-bottom: 32px;
 }
 
+.mail-icon::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../images/envelope.svg);
+}
+
+.tel-icon::before {
+  content: '';
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/tel-icon.svg);
+}
+
 .header-contacts-item:hover,
 .header-contacts-item:focus {
   color: var(--accent-color);
@@ -170,7 +186,14 @@ img {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--secondary-background-color);
+  max-width: 1600px;
+  min-height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/backgroudphoto-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(196, 196, 196, 1);
 }
 
 .hero-title {
@@ -207,6 +230,52 @@ img {
 .features-item:not(:last-child) {
   margin-right: var(--between-li-distance);
 }
+.features-item.attention::before {
+  display: block;
+  content: '';
+  height: 120px;
+  outline: 2px red dotted;
+  background-image: url(../images/antenna-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.features-item.punctuality::before {
+  display: block;
+  content: '';
+  height: 120px;
+  outline: 2px red dotted;
+  background-image: url(../images/clock-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:background: rgba(245, 244, 250, 1);
+  margin-bottom: 30px;
+}
+
+.features-item.planning::before {
+  display: block;
+  content: '';
+  height: 120px;
+  outline: 2px red dotted;
+  background-image: url(../images/diagram-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:background: rgba(245, 244, 250, 1);
+  margin-bottom: 30px;
+  }
+.features-item.technologies::before {
+  display: block;
+  content: '';
+  height: 120px;
+  outline: 2px red dotted;
+  background-image:  url(../images/astronaut-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:background: rgba(245, 244, 250, 1);
+  margin-bottom: 30px;
+}
+
 
 .features-title {
   margin-bottom: 10px;
@@ -282,6 +351,25 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
+/*---------------------Customers section--------------------- */
+.customets-section-title{
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+.customers-list{
+  display: flex;
+}
+
+.customers-item{
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: var(--between-li-distance);}
 
 /*---------------------Footer section--------------------- */
 .footer {
