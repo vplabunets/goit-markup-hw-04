@@ -350,8 +350,24 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 16px;
+}
+.team-social-list{
+  display: flex;
+  justify-content: center;
 }
 
+.team-social-item{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  outline: 2px red dotted;
+}
+.team-social-item:not(:last-child){
+  margin-right: 10px;
+;
+}
 /*---------------------Customers section--------------------- */
 .customets-section-title{
   color: var(--secondary-text-color);
