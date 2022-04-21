@@ -157,8 +157,11 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.envelope-icon{
+  margin-right: 10px;
+}
 
-.mail-icon::before {
+/* .mail-icon::before {
   content: '';
   width: 16px;
   height: 12px;
@@ -172,7 +175,7 @@ img {
   height: 16px;
   margin-right: 10px;
   background-image: url(../images/tel-icon.svg);
-}
+} */
 
 .header-contacts-item:hover,
 .header-contacts-item:focus {
@@ -378,10 +381,13 @@ img {
 }
 
 .customers-item{
+  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .customers-item:not(:last-child) {
@@ -431,6 +437,34 @@ address {
 .footer-contacts-item:hover,
 .footer-contacts-item:focus {
   color: var(--accent-color);
+}
+
+.footer-container{
+  display: flex;
+
+}
+.footer-social{
+  outline: 2px red dotted;
+    margin-left: 70px;
+}
+.footer-social-list{
+  display: flex;
+  justify-content: center;
+}
+.footer-social-title{
+  
+}
+
+.footer-social-item{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  outline: 2px red dotted;
+}
+.footer-social-item:not(:last-child){
+  margin-right: 10px;
+;
 }
 /*---------------------Portfolio section--------------------- */
 
