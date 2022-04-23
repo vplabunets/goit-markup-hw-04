@@ -185,10 +185,10 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  min-height: 600px;
+
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/backgroudphoto-hero.jpg);
-  background-size: 1600px auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(196, 196, 196, 1);
@@ -227,13 +227,22 @@ img {
 }
 
 .features-icon {
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 26px;
 }
 
 .features-item:not(:last-child) {
   margin-right: var(--between-li-distance);
 }
 
+.feature-div {
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 .features-title {
   margin-bottom: 10px;
   width: 270px;
@@ -420,6 +429,7 @@ address {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social {
@@ -432,7 +442,6 @@ address {
 }
 
 .footer-social-title {
-  padding-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -491,15 +500,16 @@ address {
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px;
-  box-shadow: 0px 2px 2px 0px #0000001f;
-  box-shadow: 0px 1px 2px 0px #00000014;
-  box-shadow: 0px 3px 1px 0px #0000001a;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
+  outline: none;
   background-color: var(--accent-color);
   color: var(--main-white-color);
+  box-shadow: 0px 2px 2px 0px #0000001f;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  box-shadow: 0px 3px 1px 0px #0000001a;
 }
 
 .portfolio-item-title {
@@ -538,7 +548,12 @@ address {
   margin-left: var(--between-li-distance);
 }
 
-.portfolio-item:hover {
+.portfolio-item-link {
+  display: block;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
